@@ -1,0 +1,57 @@
+1) Let S and T be language over ={a,b} represented by the regular expressions (a+b*)* and (a+b)*, respectively. What is the relation between S and T?
+
+S = T
+
+2) Consider a disk pack with 16 surfaces, 128 tracks per surface and 256 sectors per track. 512 bytes of data are stored in a bit serial manner in a sector. The capacity of the disk pack and the number of bits required to specify a particular sector in the disk are respectively:
+
+256 Mbyte, 19 bits
+
+Capacity of the disk = 16 surfaces X 128 tracks X 256 sectors X 512 bytes = 256 Mbytes.
+To calculate number of bits required to access a sector, we need to know total number of sectors. Total number of sectors = 16 surfaces X 128 tracks X 256 sectors = 2^19
+So the number of bits required to access a sector is 19.
+
+3) if (fork() == 0)
+{ a = a + 5; printf("%d,%d\n", a, &a); }
+else { a = a –5; printf("%d, %d\n", a, &a); } 
+
+Let u, v be the values printed by the parent process, and x, y be the values printed by the child process. What is the relation between u and x, and v and y?
+
+u + 10 = x and v = y
+
+fork() returns 0 in child process and process ID of child process in parent process.
+In Child (x), a = a + 5
+In Parent (u), a = a – 5;
+Therefore x = u + 10.
+The physical addresses of ‘a’ in parent and child must be different. But our program accesses virtual addresses (assuming we are running on an OS that uses virtual memory). The child process gets an exact copy of parent process and virtual address of ‘a’ doesn’t change in child process. Therefore, we get same addresses in both parent and child. See this run for example.
+
+4) Using a functions that simulates a coin toss, simulate a die throw.
+
+5) Which of the following scenarios may lead to an irrecoverable error in a database system ?
+(A) A transaction writes a data item after it is read by an uncommitted transaction
+(B) A transaction reads a data item after it is read by an uncommitted transaction
+(C) A transaction reads a data item after it is written by a committed transaction
+(D) A transaction reads a data item after it is written by an uncommitted transaction
+
+6) Two computers C1 and C2 are configured as follows. C1 has IP address 203.197.2.53 and netmask 255.255.128.0. C2 has IP address 203.197.75.201 and netmask 255.255.192.0. Does C1 think C2 is on the same network as it and does C2 think that C1 is on the same network as it?
+
+C1 assumes C2 is on same network, but C2 assumes C1 is on a different network
+
+Network Id of C1 = bitwise '&' of IP of C1 and subnet mask of C1 
+                 = (203.197.2.53) & (255.255.128.0) 
+                 = 203.197.0.0
+C1 sees network ID of C2 as bitwise '&' of IP of C2 and subnet mask of C1 
+                = (203.197.75.201) & (255.255.128.0) 
+                = 203.197.0.0
+which is same as Network Id of C1.
+
+Network Id of C2 = bitwise '&' of IP of C2 and subnet mask of C2
+                 = (203.197.75.201) & (255.255.192.0) 
+                 = 203.197.64.0
+C2 sees network ID of C1 as bitwise '&' of IP of C1 and subnet mask of C2
+                = (203.197.2.53) & (255.255.192.0) 
+                = 203.197.0.0
+which is different from Network Id of C2.
+
+7) Authentication vs Authorization with example
+
+8) Time complexity and internal working of adding an element to the end of a vector

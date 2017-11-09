@@ -1,0 +1,11 @@
+1) Time complexity and internal working of adding an element to a vector
+
+2) For loop vs while loop
+
+3) Overloading vs Overriding
+
+4) Java abstract classes vs interfaces
+
+5) Annotation vs XML
+
+6) Setter vs Constructor injection

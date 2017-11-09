@@ -1,0 +1,14 @@
+1) Let S and T be language over ={a,b} represented by the regular expressions (a+b*)* and (a+b)*, respectively. What is the relation between S and T?
+
+S = T
+
+2) Consider the languages L1 = {0i1j | i != j}. L2 = {0i1j | i = j}. L3 = {0i1j | i = 2j+1}. L4 = {0i1j | i != 2j}.
+
+Which of the four languages are context free?
+
+All since:  A Pushdown Automata can be built for all four languages.
+
+3) 
+
+
+

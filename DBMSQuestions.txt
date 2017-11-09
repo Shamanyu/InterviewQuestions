@@ -1,0 +1,29 @@
+1)  Consider a relation scheme R = (A, B, C, D, E, H) on which the following functional dependencies hold: {A–>B, BC–>D, E–>C, D–>A}. What are the candidate keys of R?
+
+AEH, BEH, DEH
+
+2) In the index allocation scheme of blocks to a file, the maximum possible size of the file depends on?
+
+the number of blocks used for the index, and the size of the blocks.
+
+In the index allocation method, an index block stores the address of all the blocks allocated to a file.
+
+When indexes are created, the maximum number of blocks given to a file depends upon the size of the index which tells how many blocks can be there and size of each block(i.e. same as depending upon the number of blocks for storing the indexes and size of each index block).
+
+3) Which of the following scenarios may lead to an irrecoverable error in a database system ?
+(A) A transaction writes a data item after it is read by an uncommitted transaction
+(B) A transaction reads a data item after it is read by an uncommitted transaction
+(C) A transaction reads a data item after it is written by a committed transaction
+(D) A transaction reads a data item after it is written by an uncommitted transaction
+
+D 
+
+4) How are database indexes implemented?
+
+5) What's a secondary index? When and why(use case example) should we create it? A record has one column with cardinality two and another column with cardinality ten, which one should an index be put on?
+
+6) SQL vs NoSQL
+
+7) Pessimistic locking vs optimistic locking
+
+8) CAP theorem

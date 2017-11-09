@@ -1,0 +1,42 @@
+1) Station A uses 32 byte packets to transmit messages to Station B using a sliding window protocol. The round trip delay between A and B is 80 milliseconds and the bottleneck bandwidth on the path between A and B is 128 kbps. What is the optimal window size that A should use?
+
+41
+
+Round Trip propagation delay = 80ms 
+Frame size = 32*8 bits
+Bandwidth = 128kbps
+Transmission Time = 32*8/(128) ms = 2 ms
+
+Let n be the window size.
+
+UtiliZation = n/(1+2a) where a = Propagation time / transmission time
+            = n/(1+80/2)
+
+For maximum utilization: n = 41 which is close to option (B)
+See this for details.
+
+2) Two computers C1 and C2 are configured as follows. C1 has IP address 203.197.2.53 and netmask 255.255.128.0. C2 has IP address 203.197.75.201 and netmask 255.255.192.0. Does C1 think C2 is on the same network as it and does C2 think that C1 is on the same network as it?
+
+C1 assumes C2 is on same network, but C2 assumes C1 is on a different network
+
+Network Id of C1 = bitwise '&' of IP of C1 and subnet mask of C1 
+                 = (203.197.2.53) & (255.255.128.0) 
+                 = 203.197.0.0
+C1 sees network ID of C2 as bitwise '&' of IP of C2 and subnet mask of C1 
+                = (203.197.75.201) & (255.255.128.0) 
+                = 203.197.0.0
+which is same as Network Id of C1.
+
+Network Id of C2 = bitwise '&' of IP of C2 and subnet mask of C2
+                 = (203.197.75.201) & (255.255.192.0) 
+                 = 203.197.64.0
+C2 sees network ID of C1 as bitwise '&' of IP of C1 and subnet mask of C2
+                = (203.197.2.53) & (255.255.192.0) 
+                = 203.197.0.0
+which is different from Network Id of C2.
+
+3) TCP vs UDP
+
+4) Authentication vs authorization with example
+
+5) PUT vs POST

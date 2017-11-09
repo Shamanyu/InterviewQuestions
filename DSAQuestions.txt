@@ -1,0 +1,68 @@
+1) What is the maximum height of any AVL-tree with 7 nodes? Assume that the height of a tree with a single node is 0.
+
+3
+
+AVL trees are binary trees with the following restrictions.
+1) the height difference of the children is at most 1.
+2) both children are AVL trees
+
+2) What is the time complexity of fun()?
+int fun(int n)
+{
+  int count = 0;
+  for (int i = 0; i < n; i++)
+     for (int j = i; j > 0; j--)
+        count = count + 1;
+  return count;
+} 
+
+Theta (n^2)
+
+The time complexity can be calculated by counting number of times the expression “count = count + 1;” is executed. The expression is executed 0 + 1 + 2 + 3 + 4 + …. + (n-1) times.
+Time complexity = Theta(0 + 1 + 2 + 3 + .. + n-1) = Theta (n*(n-1)/2) = Theta(n^2)
+
+3) In a binary max heap containing n numbers, the smallest element can be found in time?
+
+O(n)
+
+4) WAP to find if a number is odd or even
+
+5) A number occurs greater than n/2 times in an array. Find it.
+
+6) Remove all rows and columns from a matrix in which a zero appears.
+
+7) Using a functions that simulates a coin toss, simulate a die throw.
+
+8) LinkedIn style people you may know feature
+
+9) Snake and Ladder Problem: Find min number of die throw required to goal
+
+BFS
+
+10) Count ways to reach nth stair
+
+Fibonacci
+
+11) Consider below two C language functions to compute sum of elements in a 2D array. Ignoring the compiler optimizations, which of the two is better implementation of sum?
+
+// Function 1
+int fun1(int arr[R][C])
+{
+    int sum = 0;
+    for (int i=0; i<R; i++)
+      for (int j=0; j<C; j++)
+          sum += arr[i][j];
+}
+ 
+// Function 2
+int fun2(int arr[R][C])
+{
+    int sum = 0;
+    for (int j=0; j<C; j++)
+      for (int i=0; i<R; i++)
+          sum += arr[i][j];
+}
+
+Function 1 cause spatial locality
+
+12) Count the number of ways we can paranthesize a boolean expression so that it evaluates to true

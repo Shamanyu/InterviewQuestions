@@ -1,0 +1,35 @@
+1) Consider three processes (process id 0, 1, 2 respectively) with compute time bursts 2, 4 and 8 time units. All processes arrive at time zero. Consider the longest remaining time first (LRTF) scheduling algorithm. In LRTF ties are broken by giving priority to the process with the lowest process id. The average turn around time is? Assume a process runs for a minimum of one second everytime.
+
+13.
+
+2) Consider a disk pack with 16 surfaces, 128 tracks per surface and 256 sectors per track. 512 bytes of data are stored in a bit serial manner in a sector. The capacity of the disk pack and the number of bits required to specify a particular sector in the disk are respectively:
+
+256 Mbyte, 19 bits
+
+Capacity of the disk = 16 surfaces X 128 tracks X 256 sectors X 512 bytes = 256 Mbytes.
+To calculate number of bits required to access a sector, we need to know total number of sectors. Total number of sectors = 16 surfaces X 128 tracks X 256 sectors = 2^19
+So the number of bits required to access a sector is 19.
+
+3) if (fork() == 0)
+{ a = a + 5; printf("%d,%d\n", a, &a); }
+else { a = a –5; printf("%d, %d\n", a, &a); } 
+
+Let u, v be the values printed by the parent process, and x, y be the values printed by the child process. What is the relation between u and x, and v and y?
+
+u + 10 = x and v = y
+
+fork() returns 0 in child process and process ID of child process in parent process.
+In Child (x), a = a + 5
+In Parent (u), a = a – 5;
+Therefore x = u + 10.
+The physical addresses of ‘a’ in parent and child must be different. But our program accesses virtual addresses (assuming we are running on an OS that uses virtual memory). The child process gets an exact copy of parent process and virtual address of ‘a’ doesn’t change in child process. Therefore, we get same addresses in both parent and child. See this run for example.
+
+4) Name one scheduling algorithm which could lead to starvation.
+
+SJF
+
+5) Multi process, multi core and multi thread discussion
+
+6) Scheduling algorithms discussion, including preemptive/non-preemptive
+
+7) Semaphore vs Mutex 

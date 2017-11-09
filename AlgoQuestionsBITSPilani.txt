@@ -1,0 +1,15 @@
+Easy
+1) http://www.geeksforgeeks.org/multiplying-variable-constant-without-using-multiplication-operator/
+2) http://www.geeksforgeeks.org/write-a-program-to-add-two-numbers-in-base-14/
+3) http://quiz.geeksforgeeks.org/construct-array-pair-sum-array/
+4) http://www.geeksforgeeks.org/find-maximum-sum-possible-equal-sum-three-stacks/
+5) Remove all rows and columns from a matrix in which a zero appears
+
+Medium
+1) http://www.geeksforgeeks.org/ugly-numbers/
+2) http://www.geeksforgeeks.org/check-whether-bst-contains-dead-end-not/
+3) Using a function that simulates a coin toss, simulate a die throw
+4) A number occurs greater than n/2 times in an array. Find it.
+
+Tough
+1) http://www.geeksforgeeks.org/distinct-strings-odd-even-changes-allowed/
