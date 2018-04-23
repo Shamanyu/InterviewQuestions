@@ -2,3 +2,7 @@
 
 2) Design a notification system:
     There exist multiple systems. All of them send notifications to a central server. The sales team needs to be able to decide which notification to pass to which user and when. They should have an easy interface to write their filter.
+
+3) Instagram popular regions
+
+4) try-catch block

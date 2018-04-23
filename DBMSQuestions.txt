@@ -16,7 +16,7 @@ When indexes are created, the maximum number of blocks given to a file depends u
 (C) A transaction reads a data item after it is written by a committed transaction
 (D) A transaction reads a data item after it is written by an uncommitted transaction
 
-D 
+D
 
 4) How are database indexes implemented?
 
@@ -27,3 +27,9 @@ D
 7) Pessimistic locking vs optimistic locking
 
 8) CAP theorem
+
+9) ORM
+
+10) ACID vs BASE
+
+11) kafka, redis, RabbitMQ, memcache

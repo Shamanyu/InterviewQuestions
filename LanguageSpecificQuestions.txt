@@ -9,3 +9,7 @@
 5) Annotation vs XML
 
 6) Setter vs Constructor injection
+
+7) Java Spring: Aspect Oriented Programming
+
+8) OOP: SOLID design principles

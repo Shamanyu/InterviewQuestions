@@ -2,7 +2,7 @@
 
 41
 
-Round Trip propagation delay = 80ms 
+Round Trip propagation delay = 80ms
 Frame size = 32*8 bits
 Bandwidth = 128kbps
 Transmission Time = 32*8/(128) ms = 2 ms
@@ -19,24 +19,30 @@ See this for details.
 
 C1 assumes C2 is on same network, but C2 assumes C1 is on a different network
 
-Network Id of C1 = bitwise '&' of IP of C1 and subnet mask of C1 
-                 = (203.197.2.53) & (255.255.128.0) 
+Network Id of C1 = bitwise '&' of IP of C1 and subnet mask of C1
+                 = (203.197.2.53) & (255.255.128.0)
                  = 203.197.0.0
-C1 sees network ID of C2 as bitwise '&' of IP of C2 and subnet mask of C1 
-                = (203.197.75.201) & (255.255.128.0) 
+C1 sees network ID of C2 as bitwise '&' of IP of C2 and subnet mask of C1
+                = (203.197.75.201) & (255.255.128.0)
                 = 203.197.0.0
 which is same as Network Id of C1.
 
 Network Id of C2 = bitwise '&' of IP of C2 and subnet mask of C2
-                 = (203.197.75.201) & (255.255.192.0) 
+                 = (203.197.75.201) & (255.255.192.0)
                  = 203.197.64.0
 C2 sees network ID of C1 as bitwise '&' of IP of C1 and subnet mask of C2
-                = (203.197.2.53) & (255.255.192.0) 
+                = (203.197.2.53) & (255.255.192.0)
                 = 203.197.0.0
 which is different from Network Id of C2.
 
 3) TCP vs UDP
 
-4) Authentication vs authorization with example
+4) Authentication vs authorisation with example
 
 5) PUT vs POST
+
+6) REST
+
+7) SOAP
+
+8) HTTP methods
